@@ -23,37 +23,42 @@
                     <em>You know</em> you want to.
                 </p>
             </div>
-            <form action="#" method="post">
+            <form>
                 <h1>Let's do this!</h1>
                 <div class="input-fields">
                     <div class="field">
                         <label for="">First Name:</label>
-                        <input type="text">
+                        <input type="text" name="first_name" placeholder="John" required >
                     </div>
                     <div class="field">
                         <label for="">Last Name</label>
-                        <input type="text">
+                        <input type="text" name="last_name" placeholder="Doe" required>
                     </div>
                     <div class="field">
                         <label for="">Email:</label>
-                        <input type="email">
+                        <input type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="123@gmail.com" name="email_address" placeholder="example@gmail.com" required>
                     </div>
                     <div class="field">
                         <label for="">Phone Number:</label>
-                        <input type="tel">
+                        <input type="tel" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Format: 123-456-7890" name="phone_number" placeholder="123-456-7890" required >
                     </div>
                     <div class="field">
                         <label for="">Password:</label>
-                        <input type="password">
+                        <input type="password" pattern="^{8,12}$
+                        " name="password" id="password" placeholder="Testing07#&" required>
                     </div>
                     <div class="field">
                         <label for="">Confirm Password:</label>
-                        <input type="password">
+                        <input type="password" id="confirm-password" placeholder="Testing07#&" required >
+                        <p id="error"></p>
                     </div>
                 </div>
                 <button type="submit">Create Account</button>
                 <p>Already have an account? <a href="#">Log in</a></p>
             </form>
         </section>
+
+
+        <script src="script.js"></script>
     </body>
 </html>

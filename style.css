@@ -47,7 +47,7 @@ section{
 .title{
     width: 700px;
     font-size: 21px;
-    font-weight: 600;
+    font-weight: bolder;
     text-align: start;
     margin: 55px 0px 45px 0px;
     padding-left: 45px;
@@ -83,7 +83,7 @@ form > h1{
     margin-bottom: 28px ;
 }
 input{
-    border: 1px solid black;
+    border: 1px solid lightgray;
     border-radius: 4px;
     padding: 0.5rem 0.75rem;
     outline: none;
@@ -113,4 +113,10 @@ form > p > a{
 }
 form > p > a:hover{
     text-decoration: underline;
+}
+
+/* JavaScript Error Styling */
+#error{
+    font-size: 0.75rem;
+    color: red;
 }
