@@ -41,16 +41,16 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100vh;
 }
 .title{
-    width: 700px;
+    max-width: 700px;
     font-size: 21px;
     font-weight: bolder;
     text-align: start;
-    margin: 55px 0px 45px 0px;
-    padding-left: 45px;
+    margin: 0px 0px 45px 0px;
     letter-spacing: 1px;
 
 }
@@ -119,4 +119,28 @@ form > p > a:hover{
 #error{
     font-size: 0.75rem;
     color: red;
+}
+
+/* Media Queries */
+@media screen and (max-width: 375px) {
+    body{
+        flex-direction: column;
+    }
+    .bg-image{
+        height: 30vh;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .logo > img{
+        height: 75px;
+        object-fit: contain;
+    }
+    .input-fields{
+        grid-template-columns: repeat(1, auto);
+    }
+    .title{
+        font-size: 21px;
+        text-align: center;
+    }
+
 }
